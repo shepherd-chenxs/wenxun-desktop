@@ -60,8 +60,6 @@ jobs:
 
       - name: 编译并打包（vite build + cargo release + NSIS）
         run: npm run tauri:build
-        env:
-          TAURI_SIGNING_PRIVATE_KEY: ''
 
       - name: 归一产物名并计算校验值
         id: meta

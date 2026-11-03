@@ -1,0 +1,7 @@
+# Rust 测试配置
+
+[toolchain]
+channel = "stable"
+
+# 测试覆盖率工具（可选）
+# 安装: cargo install cargo-tarpaulin

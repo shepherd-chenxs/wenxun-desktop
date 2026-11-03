@@ -1,0 +1,63 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+dist-electron/
+out/
+release/
+app-build/
+app-release/
+final-build/
+temp-build/
+
+# Tauri build outputs
+src-tauri/target/
+src-tauri/.cargo/
+*.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Temporary files
+*.tmp
+*.temp
+
+# Test coverage and reports
+coverage/
+reports/
+*.lcov
+
+# Test databases
+test_*.db
+*test.db
+
+# Local AI tooling config
+.claude/settings.local.json
+.bandi/
+.qoder/
+.zcode/
+.workbuddy/
+
+# Internal working docs (not part of the open-source release)
+docs/
+tmp/

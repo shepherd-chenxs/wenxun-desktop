@@ -1,0 +1,58 @@
+{
+  "$schema": "https://schema.tauri.app/config/2.0",
+  "identifier": "com.wenxun.app",
+  "build": {
+    "beforeDevCommand": "npm run dev",
+    "beforeBuildCommand": "npm run build",
+    "devUrl": "http://localhost:5174",
+    "frontendDist": "../dist"
+  },
+  "bundle": {
+    "active": true,
+    "targets": [
+      "nsis"
+    ],
+    "shortDescription": "文迅 - 桌面文章编辑应用",
+    "longDescription": "文迅 - 桌面文章编辑应用",
+    "category": "Productivity",
+    "icon": [
+      "icons/32x32.png",
+      "icons/64x64.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.ico"
+    ],
+    "windows": {
+      "nsis": {
+        "installerIcon": "icons/icon.ico",
+        "installMode": "perMachine",
+        "template": "custom-installer.nsi",
+        "languages": [
+          "SimpChinese",
+          "English"
+        ]
+      }
+    }
+  },
+  "app": {
+    "windows": [
+      {
+        "title": "文迅",
+        "width": 1200,
+        "height": 800,
+        "minWidth": 800,
+        "minHeight": 600,
+        "resizable": true,
+        "visible": true,
+        "center": true
+      }
+    ],
+    "withGlobalTauri": true
+  },
+  "plugins": {
+    "shell": {
+      "open": true
+    }
+  },
+  "productName": "文迅"
+}

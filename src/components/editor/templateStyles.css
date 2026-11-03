@@ -1,0 +1,198 @@
+/* 模板样式系统 - CSS 隔离方案 */
+
+/* 基础样式重置 */
+.w-md-editor-preview {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* 默认模板样式 - 仅作用于预览区 */
+.markdown-editor-container.editor-template-default .w-md-editor-preview h1,
+.markdown-editor-container.editor-template-default .w-md-editor-preview > h1,
+.preview-template-default .w-md-editor-preview h1,
+.preview-template-default .w-md-editor-preview > h1 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.markdown-editor-container.editor-template-default .w-md-editor-preview h2,
+.markdown-editor-container.editor-template-default .w-md-editor-preview > h2,
+.preview-template-default .w-md-editor-preview h2,
+.preview-template-default .w-md-editor-preview > h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 16px;
+  color: #333;
+}
+
+.markdown-editor-container.editor-template-default .w-md-editor-preview h3,
+.markdown-editor-container.editor-template-default .w-md-editor-preview > h3,
+.preview-template-default .w-md-editor-preview h3,
+.preview-template-default .w-md-editor-preview > h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 14px;
+  color: #333;
+}
+
+.markdown-editor-container.editor-template-default .w-md-editor-preview p,
+.markdown-editor-container.editor-template-default .w-md-editor-preview > p,
+.preview-template-default .w-md-editor-preview p,
+.preview-template-default .w-md-editor-preview > p {
+  line-height: 1.8;
+  margin-bottom: 16px;
+  text-indent: 2em;
+}
+
+.markdown-editor-container.editor-template-default .w-md-editor-preview ul,
+.markdown-editor-container.editor-template-default .w-md-editor-preview ol,
+.preview-template-default .w-md-editor-preview ul,
+.preview-template-default .w-md-editor-preview ol {
+  margin-bottom: 16px;
+  padding-left: 2em;
+}
+
+.markdown-editor-container.editor-template-default .w-md-editor-preview li,
+.preview-template-default .w-md-editor-preview li {
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+
+/* 简洁模板样式 - 仅作用于预览区 */
+.markdown-editor-container.editor-template-simple .w-md-editor-preview h1,
+.markdown-editor-container.editor-template-simple .w-md-editor-preview > h1,
+.preview-template-simple .w-md-editor-preview h1,
+.preview-template-simple .w-md-editor-preview > h1 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 18px;
+  color: #333;
+}
+
+.markdown-editor-container.editor-template-simple .w-md-editor-preview h2,
+.markdown-editor-container.editor-template-simple .w-md-editor-preview > h2,
+.preview-template-simple .w-md-editor-preview h2,
+.preview-template-simple .w-md-editor-preview > h2 {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 14px;
+  color: #333;
+}
+
+.markdown-editor-container.editor-template-simple .w-md-editor-preview h3,
+.markdown-editor-container.editor-template-simple .w-md-editor-preview > h3,
+.preview-template-simple .w-md-editor-preview h3,
+.preview-template-simple .w-md-editor-preview > h3 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 12px;
+  color: #333;
+}
+
+.markdown-editor-container.editor-template-simple .w-md-editor-preview p,
+.markdown-editor-container.editor-template-simple .w-md-editor-preview > p,
+.preview-template-simple .w-md-editor-preview p,
+.preview-template-simple .w-md-editor-preview > p {
+  line-height: 1.7;
+  margin-bottom: 14px;
+  text-indent: 0;
+}
+
+.markdown-editor-container.editor-template-simple .w-md-editor-preview ul,
+.markdown-editor-container.editor-template-simple .w-md-editor-preview ol,
+.preview-template-simple .w-md-editor-preview ul,
+.preview-template-simple .w-md-editor-preview ol {
+  margin-bottom: 14px;
+  padding-left: 1.5em;
+}
+
+.markdown-editor-container.editor-template-simple .w-md-editor-preview li,
+.preview-template-simple .w-md-editor-preview li {
+  margin-bottom: 6px;
+  line-height: 1.5;
+}
+
+/* 专业模板样式 - 仅作用于预览区 */
+.markdown-editor-container.editor-template-professional .w-md-editor-preview h1,
+.markdown-editor-container.editor-template-professional .w-md-editor-preview > h1,
+.preview-template-professional .w-md-editor-preview h1,
+.preview-template-professional .w-md-editor-preview > h1 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 24px;
+  color: #222;
+  border-bottom: 2px solid #e8e8e8;
+  padding-bottom: 8px;
+}
+
+.markdown-editor-container.editor-template-professional .w-md-editor-preview h2,
+.markdown-editor-container.editor-template-professional .w-md-editor-preview > h2,
+.preview-template-professional .w-md-editor-preview h2,
+.preview-template-professional .w-md-editor-preview > h2 {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #222;
+  border-bottom: 1px solid #e8e8e8;
+  padding-bottom: 6px;
+}
+
+.markdown-editor-container.editor-template-professional .w-md-editor-preview h3,
+.markdown-editor-container.editor-template-professional .w-md-editor-preview > h3,
+.preview-template-professional .w-md-editor-preview h3,
+.preview-template-professional .w-md-editor-preview > h3 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 16px;
+  color: #222;
+}
+
+.markdown-editor-container.editor-template-professional .w-md-editor-preview p,
+.markdown-editor-container.editor-template-professional .w-md-editor-preview > p,
+.preview-template-professional .w-md-editor-preview p,
+.preview-template-professional .w-md-editor-preview > p {
+  line-height: 1.8;
+  margin-bottom: 18px;
+  text-indent: 2em;
+}
+
+.markdown-editor-container.editor-template-professional .w-md-editor-preview ul,
+.markdown-editor-container.editor-template-professional .w-md-editor-preview ol,
+.preview-template-professional .w-md-editor-preview ul,
+.preview-template-professional .w-md-editor-preview ol {
+  margin-bottom: 18px;
+  padding-left: 2em;
+}
+
+.markdown-editor-container.editor-template-professional .w-md-editor-preview li,
+.preview-template-professional .w-md-editor-preview li {
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .w-md-editor-preview h1,
+  .w-md-editor-preview > h1 {
+    font-size: 24px !important;
+  }
+  
+  .w-md-editor-preview h2,
+  .w-md-editor-preview > h2 {
+    font-size: 20px !important;
+  }
+  
+  .w-md-editor-preview h3,
+  .w-md-editor-preview > h3 {
+    font-size: 18px !important;
+  }
+  
+  .w-md-editor-preview p,
+  .w-md-editor-preview > p {
+    line-height: 1.6 !important;
+    margin-bottom: 12px !important;
+  }
+}
